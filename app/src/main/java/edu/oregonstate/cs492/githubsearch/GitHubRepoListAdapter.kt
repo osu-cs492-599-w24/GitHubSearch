@@ -11,8 +11,9 @@ class GitHubRepoListAdapter : RecyclerView.Adapter<GitHubRepoListAdapter.GitHubR
     var gitHubRepoList = listOf<GitHubRepo>()
 
     fun updateRepoList(newRepoList: List<GitHubRepo>) {
+        notifyItemRangeRemoved(0, gitHubRepoList.size)
         gitHubRepoList = newRepoList
-        notifyDataSetChanged()
+        notifyItemRangeInserted(0, gitHubRepoList.size)
     }
 
     override fun getItemCount() = gitHubRepoList.size
