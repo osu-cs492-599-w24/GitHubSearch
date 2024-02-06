@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dummySearchResults = listOf<GitHubRepo>(
+        val dummySearchResults = listOf(
             GitHubRepo("Dummy search results"),
             GitHubRepo("Dummy search results"),
             GitHubRepo("Dummy search results"),

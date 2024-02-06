@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import edu.oregonstate.cs492.githubsearch.data.GitHubRepo
 
 class GitHubRepoListAdapter : RecyclerView.Adapter<GitHubRepoListAdapter.GitHubRepoViewHolder>() {
-    var gitHubRepoList = listOf<GitHubRepo>()
+    private var gitHubRepoList = listOf<GitHubRepo>()
 
     fun updateRepoList(newRepoList: List<GitHubRepo>) {
         notifyItemRangeRemoved(0, gitHubRepoList.size)
