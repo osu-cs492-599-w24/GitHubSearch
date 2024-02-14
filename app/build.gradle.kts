@@ -44,7 +44,7 @@ dependencies {
     implementation("com.google.android.material:material:1.11.0")
 
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-scalars:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
 
     implementation("com.squareup.moshi:moshi:1.15.0")
 
